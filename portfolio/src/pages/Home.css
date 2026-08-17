@@ -1,0 +1,205 @@
+/* ── Hero ─────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+  padding: 100px 0 90px;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-eyebrow {
+  font-family: var(--fonte-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-acento);
+  margin-bottom: 12px;
+}
+
+.hero-titulo {
+  font-family: var(--fonte-display);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--cor-texto);
+  margin-bottom: 24px;
+}
+
+.hero-cursor {
+  color: var(--cor-acento);
+  animation: piscar 0.9s step-end infinite;
+  margin-left: 2px;
+}
+
+.hero-subtitulo {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--cor-texto-suave);
+  max-width: 560px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+.hero-acoes {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-primario {
+  padding: 11px 28px;
+  background: var(--cor-acento);
+  color: #0D1117;
+  border-radius: var(--raio);
+  font-family: var(--fonte-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.btn-primario:hover {
+  opacity: 0.85;
+}
+
+.btn-secundario {
+  padding: 11px 28px;
+  background: transparent;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  font-family: var(--fonte-display);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-secundario:hover {
+  border-color: var(--cor-acento);
+  color: var(--cor-acento);
+}
+
+/* Blob decorativo */
+.hero-decoracao {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-blob {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(63,185,80,0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* ── Interesses ───────────────────────────────────────── */
+.interesses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.interesse-card {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: 28px 24px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.interesse-card:hover {
+  border-color: var(--cor-acento);
+  box-shadow: 0 0 0 1px var(--cor-acento), var(--sombra);
+}
+
+.interesse-icone {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--cor-acento);
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.interesse-card h3 {
+  font-family: var(--fonte-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  margin-bottom: 8px;
+}
+
+.interesse-card p {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.65;
+}
+
+/* ── Contato ──────────────────────────────────────────── */
+.secao-contato {
+  background: var(--cor-superficie);
+  border-top: 1px solid var(--cor-borda);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  background: var(--cor-fundo);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.contato-item:hover {
+  border-color: var(--cor-acento);
+  box-shadow: 0 0 0 1px var(--cor-acento);
+}
+
+.contato-icone {
+  width: 40px;
+  height: 40px;
+  background: var(--cor-acento-claro);
+  color: var(--cor-acento);
+  border: 1px solid rgba(63, 185, 80, 0.25);
+  border-radius: var(--raio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.contato-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contato-item strong {
+  font-family: var(--fonte-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+
+.contato-item span {
+  font-size: 0.82rem;
+  color: var(--cor-texto-suave);
+}

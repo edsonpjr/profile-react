@@ -1,3 +1,5 @@
+import './ProjectCard.css'
+
 export default function ProjectCard({ projeto }) {
   const {
     nome,

@@ -1,4 +1,5 @@
 import ProjectCard from '../components/ProjectCard'
+import './Portfolio.css'
 
 const projetos = [
   {

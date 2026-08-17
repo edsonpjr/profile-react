@@ -1,0 +1,121 @@
+/* ── Card ─────────────────────────────────────────────── */
+.project-card {
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  border-color: var(--cor-acento);
+  box-shadow: 0 0 0 1px var(--cor-acento), var(--sombra);
+}
+
+/* ── Imagem ───────────────────────────────────────────── */
+.project-card-imagem {
+  position: relative;
+}
+
+.project-card-imagem img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.project-card-disciplina {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+/* ── Corpo ────────────────────────────────────────────── */
+.project-card-corpo {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.project-card-nome {
+  font-family: var(--fonte-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+  line-height: 1.35;
+}
+
+.project-card-descricao {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+/* ── Blocos internos ──────────────────────────────────── */
+.project-card-bloco {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-card-bloco p {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.65;
+}
+
+.project-card-rotulo {
+  font-family: var(--fonte-display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cor-acento);
+}
+
+/* ── Tags de tecnologia ───────────────────────────────── */
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── Ações ────────────────────────────────────────────── */
+.project-card-acoes {
+  display: flex;
+  gap: 10px;
+  padding-top: 4px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.project-card-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: var(--cor-acento);
+  color: #0D1117;
+  border-radius: var(--raio);
+  font-family: var(--fonte-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.project-card-btn:hover {
+  opacity: 0.85;
+}
+
+.project-card-btn--secundario {
+  background: transparent;
+  color: var(--cor-acento);
+  border: 1px solid rgba(63, 185, 80, 0.35);
+}
+
+.project-card-btn--secundario:hover {
+  background: var(--cor-acento-claro);
+  opacity: 1;
+}

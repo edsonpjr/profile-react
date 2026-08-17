@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Home.css'
 
 const NOME = 'Edson Júnior'
 
@@ -37,7 +38,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero */}
       <section className="hero">
         <div className="container hero-inner">
           <p className="hero-eyebrow">Olá, sou</p>
@@ -59,7 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interesses */}
       <section className="secao">
         <div className="container">
           <h2 className="secao-titulo">Interesses</h2>
@@ -75,7 +74,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contato */}
       <section className="secao secao-contato">
         <div className="container">
           <h2 className="secao-titulo">Contato</h2>

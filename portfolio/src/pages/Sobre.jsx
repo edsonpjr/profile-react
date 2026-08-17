@@ -1,3 +1,5 @@
+import './Sobre.css'
+
 const habilidades = [
   { categoria: 'Linguagens',       itens: ['Java', 'Python', 'JavaScript', 'SQL', 'C', 'Haskell'] },
   { categoria: 'Frameworks & Libs', itens: ['Spring Boot', 'React', 'NextJS', 'FastAPI', 'Vite'] },
