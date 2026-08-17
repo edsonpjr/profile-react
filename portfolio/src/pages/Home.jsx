@@ -6,17 +6,17 @@ const NOME = 'Edson Júnior'
 
 const interesses = [
   {
-    icone: '⬡',
+    icone: '{ }',
     titulo: 'Inteligência Artificial',
     texto: 'Explorar modelos de linguagem, APIs de IA e suas aplicações práticas no desenvolvimento de software.',
   },
   {
-    icone: '◈',
+    icone: '< >',
     titulo: 'Análise de Dados',
     texto: 'Transformar dados brutos em informação útil usando SQL, Python, Pandas e visualizações claras.',
   },
   {
-    icone: '◻',
+    icone: '[ ]',
     titulo: 'Desenvolvimento Backend',
     texto: 'Construir APIs e sistemas robustos com tecnologias diversas, como Java e Spring Boot, com foco em boas práticas.',
   },
